@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+	border-radius: 10px;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+}
+
+body, html {
+	height: 100%;
+}
+
+body {
+	background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #000000 75%);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+	width: 15px; /* Ширина всего элемента навигации */
+  }
+  
+  body::-webkit-scrollbar-track {
+	background: #fff; /* Цвет дорожки */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background-color: #050c26; /* Цвет бегунка */
+	border-radius: 20px; /* Округление бегунка */
+	border: 3px solid #050c26; /* Оформление границ бегунка */
+  }
+
+.fixedBl {
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	top: 0;
+	background: black;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 30px;
+	text-decoration: none;
+	border-radius: 0px;
+}
+
+.fixedBl div {
+	cursor: pointer;
+}
+
+.fixedBl div:hover {
+	text-decoration: underline;
+}
+
+.Home {
+	margin-left: 20px;
+}
+
+.fixedBl div p {
+	font-size: 30px;
+}
+
+h1 {
+	margin-top: 80px;
+	font-size: 40px;
+}
+
+.PText {
+	width: 700px;
+	margin-top: 10px;
+	font-size: 30px;
+	text-align: center;
+	text-shadow: 
+		-0   -2px 0   #000000,
+		 0   -2px 0   #000000,
+		-0    2px 0   #000000,
+		 0    2px 0   #000000,
+		-2px -0   0   #000000,
+		 2px -0   0   #000000,
+		-2px  0   0   #000000,
+		 2px  0   0   #000000,
+		-1px -2px 0   #000000,
+		 1px -2px 0   #000000,
+		-1px  2px 0   #000000,
+		 1px  2px 0   #000000,
+		-2px -1px 0   #000000,
+		 2px -1px 0   #000000,
+		-2px  1px 0   #000000,
+		 2px  1px 0   #000000,
+		-2px -2px 0   #000000,
+		 2px -2px 0   #000000,
+		-2px  2px 0   #000000,
+		 2px  2px 0   #000000,
+		-2px -2px 0   #000000,
+		 2px -2px 0   #000000,
+		-2px  2px 0   #000000,
+		 2px  2px 0   #000000;
+}
+
+button {
+	padding: 10px 15px;
+	margin: 20px;
+	font-size: 35px;
+	border: 3px solid white;
+	background: none;
+	cursor: pointer;
+}
+
+.container {
+	padding: 10px;
+	min-width: 400px;
+	height: 550px;
+	border: 3px solid white;
+	background: none;
+	backdrop-filter: blur(100px);
+	overflow-y: auto;
+}
+
+.container::-webkit-scrollbar {
+	width: 15px; /* Ширина всего элемента навигации */
+  }
+  
+  .container::-webkit-scrollbar-track {
+	background: none; /* Цвет дорожки */
+  }
+  
+  .container::-webkit-scrollbar-thumb {
+	background-color: #ffffff; /* Цвет бегунка */
+	border-radius: 20px; /* Округление бегунка */
+	border: 3px solid #050c26; /* Оформление границ бегунка */
+  }
+
+.product {
+	border-top: 4px solid white;
+	border-bottom: 4px solid white;
+	border-radius: 0px;
+	margin-top: 5px;
+	padding-left: 10px;
+}
+input {
+	width: 100%;
+	margin: 15px;
+	height: 40px;
+	border: 3px solid white;
+	background: none;
+	backdrop-filter: blur(100px);
+	padding: 10px;
+}
+
+input::placeholder {
+	color: white;
+}
+
+.formed {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.createBtn {
+	width: 100%;
+}
+.infoblock p {
+	font-size: 24px;
+}
