@@ -50,31 +50,31 @@ app.get('/usersData', async (req, res) => {
 })
 app.use(express.json())
 app.post('/usersData', async (req, res) => {
-    const {name, email, password} = req.body;
+    const {name, email, password} = req.body
   
     try {
         const user = new UsersModel({
         name,
         email, 
         password
-        });
+        })
         
-        await user.save();
+        await user.save()
         
-        res.send(user);
+        res.send(user)
         
     } catch (error) {
-        console.log(error);
+        console.log(error)
     }
 })
 app.patch('/usersData/:id', async (req, res) => {
     try {
-      const user = await UsersModel.findById(req.params.id);
-      user.name = req.body.name;
-      await user.save();
-      res.send(user);
+      const user = await UsersModel.findById(req.params.id)
+      user.name = req.body.name
+      await user.save()
+      res.send(user)
     } catch (error) {
-      res.status(500).send(error);
+      res.status(500).send(error)
     }
   
   });
