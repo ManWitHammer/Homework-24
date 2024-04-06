@@ -28,6 +28,10 @@ document.addEventListener('DOMContentLoaded', async(e) => {
                 email: newEmail,
                 password: newPassword
             }
+            el.querySelector('.pipi1').innerText = `Имя: ${newName}`
+            el.querySelector('.pipi2').innerText = `Почта: ${newEmail}`
+            el.querySelector('.pipi3').innerText = `Пароль: ${newPassword}`
+            //:)
             await patchData('http://localhost:1487/usersData', name, thisUser)
         })
     })
